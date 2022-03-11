@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./images/favicon.png">
+    <title>Quiz de Historia Argentina</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <div class="wave1" >
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%"
+      >
+        <path
+          d="M0.00,49.98 C212.47,156.42 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+          style="stroke: none; fill: rgb(136, 194, 218)"
+        ></path>
+      </svg>
+    </div>
+    <div class="popup-wrapper">
+        <div class="popup">
+            <div class="popup-content">
+                <h3 class="popup-title">¿Cuánto sabés de historia argentina?</h3>
+                <img class="gif" src="./images/quizgif.gif" width="30%" alt="gif de personajes historicos"/>
+                <p>Realizá este test 
+                  para evaluar tus conocimientos acerca de la historia de
+                   nuestro país. ¡Empecemos!</p>
+                  <button class="popup-close">Comenzar</button>
+            </div>
+        </div>
+    </div> 
+
+    <div id="container">
+      <div class="quiz-container">
+        <div id="quiz"></div>
+      </div>
+      <button id="previous">Pregunta anterior</button>
+      <button id="next">Siguiente pregunta</button>
+      <button id="submit">Ver resultado</button>
+      
+      <div id="results"></div>
+    </div>
+    <div class="wave2">
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%"
+      >
+        <path
+          d="M0.00,49.98 C290.34,253.13 382.34,-144.55 520.03,156.42 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: rgb(136, 194, 218)"
+        ></path>
+      </svg>
+    </div>
+    <!-- <script>
+      swal({
+        title: "¿Cuánto sabés de historia argentina?",
+        text: "Realizá este test para evaluar tus conocimientos acerca de la historia de nuestro país. ¡Empecemos!",
+        button: "Comenzar",
+      });
+    </script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
